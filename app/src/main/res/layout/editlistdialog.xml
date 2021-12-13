@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp">
+
+    <!--<LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+        <ImageView
+            android:id="@+id/editlistdialog_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_baseline_image_24"/>
+
+    </LinearLayout>-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="제목" />
+
+        <EditText
+            android:id="@+id/editlistdialog_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:selectAllOnFocus="true"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:inputType="text"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="장소" />
+
+        <EditText
+            android:id="@+id/editlistdialog_loaction"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:selectAllOnFocus="true"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:inputType="text"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+        <TextView
+            android:id="@+id/editlistdialog_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7.5"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text="날짜선택" />
+
+        <Switch
+            android:id="@+id/editlistdialog_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="중요한 일"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="메모" />
+
+        <EditText
+            android:id="@+id/editlistdialog_memo"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="7"
+            android:selectAllOnFocus="true"
+            android:gravity="top"
+            android:imeOptions="actionNext"
+            android:background="@drawable/blackbox"
+            android:inputType="text"
+            android:layout_marginBottom="10dp"/>
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+        <Button
+            android:id="@+id/editlistdialog_editbtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_weight="5"
+            android:text="수정"
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/editlistdialog_cancelbtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_weight="5"
+            android:text="취소"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+{
+  "id":1376016924426814086,
+  "synched_at": "2016-10-18T13:13:15Z",
+  "connected_at": "2016-10-18T13:13:15Z",
+  "group_user_token": "4NPk1e3a4s72wfPB8sWF",
+  "has_signed_up": true,
+  "properties":{
+    "nickname":"홍길동카톡",
+    "unique_nickname":"유일한홍길동",
+    "thumbnail_image":"thumbnail_image_url",
+    "profile_image":"profile_image_url",
+    "custom_field1":"23",
+    "custom_field2":"여"
+
+  },
+  "kakao_account": {
+
+    "profile_needs_agreement": false,
+    "profile": {
+      "nickname": "홍길동",
+      "thumbnail_image_url": "thumbnail_image_url",
+      "profile_image_url": "profile_image_url"
+    },
+
+    "email_needs_agreement": false,
+    "is_email_valid": true,
+    "is_email_verified": true,
+    "email": "test@gmail.com",
+
+    "phone_number_needs_agreement": false,
+    "phone_number": "+82 10-1234-1234",
+
+    "age_range_needs_agreement":false,
+    "age_range":"20~29",
+
+    "birthyear_needs_agreement": false,
+    "birthyear": "2002",
+
+    "birthday_needs_agreement":false,
+    "birthday":"1130",
+    "birthday_type":"SOLAR",
+
+    "gender_needs_agreement":false,
+    "gender":"female",
+
+    "legal_name_needs_agreement": false,
+    "legal_name": "김릴리",
+
+    "legal_birth_date_needs_agreement": false,
+    "legal_birth_date": "20021130",
+
+    "legal_gender_needs_agreement": false,
+    "legal_gender": "female",
+
+    "is_korean_needs_agreement": false,
+    "is_korean": true,
+
+    "ci_needs_agreement": false,
+    "ci": "zzzzzzzzzzzzzzzzzzzzzzzzzzxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "ci_authenticated_at": "2019-03-11T11:25:22Z",
+
+    "is_kakaotalk_user": true,
+    "display_id": "test@gmail.com",
+    "service_user_id": 1083465765787691,
+    "unification_status": false,
+
+    "account_id": 12345,
+    "talk_user_id": 23456
+  },
+  "for_partner": {
+    "uuid":"YVNjU2pZbkJ6T3xLfVFjVm9aaloO",
+    "remaining_invite_count":20,
+    "remaining_group_msg_count":5
+  }
+}

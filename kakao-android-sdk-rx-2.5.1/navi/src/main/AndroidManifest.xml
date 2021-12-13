@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        package="com.kakao.sdk.v2.navi">
+
+    <queries>
+        <package android:name="com.locnall.KimGiSa" />
+        <package android:name="com.lguplus.navi" />
+    </queries>
+
+</manifest>

@@ -1,0 +1,7 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kakao.sdk.sample.common">
+
+    <application>
+        <activity android:name=".internal.FriendsActivity" />
+    </application>
+</manifest>

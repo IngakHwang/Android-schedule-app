@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp">
+
+        <TextView
+            android:id="@+id/additemcard_date"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+
+
+            android:layout_below="@id/additemcard_memo"
+            android:layout_alignParentRight="true"
+            android:text="날짜"/>
+        <TextView
+            android:id="@+id/additemcard_time"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@id/additemcard_date"
+            android:layout_alignParentRight="true"
+            android:text="시간"/>
+
+        <TextView
+            android:id="@+id/additemcard_title"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="제목"/>
+
+        <TextView
+            android:id="@+id/additemcard_location"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+
+            android:layout_below="@id/additemcard_title"
+            android:text="장소"/>
+
+
+        <TextView
+            android:id="@+id/additemcard_memo"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:textSize="15sp"
+
+            android:layout_below="@id/additemcard_location"
+            android:text="메모"/>
+
+        <TextView
+            android:id="@+id/additemcard_important"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textColor="#B71C1C"
+
+            android:layout_toRightOf="@id/additemcard_title"
+            />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

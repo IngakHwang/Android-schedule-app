@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/frag_dust_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Dust"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/frag_dust_pm10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="미세먼지"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frag_dust_location" />
+
+    <TextView
+        android:id="@+id/frag_dust_pm10value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frag_dust_pm10" />
+
+    <TextView
+        android:id="@+id/frag_dust_pm25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="초미세먼지"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frag_dust_pm10value" />
+
+    <TextView
+        android:id="@+id/frag_dust_pm25value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frag_dust_pm25" />
+
+    <TextView
+        android:id="@+id/frag_dust_time"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginTop="5dp"
+        android:text="TextView"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/frag_dust_location"
+        app:layout_constraintStart_toStartOf="@+id/frag_dust_location"
+        app:layout_constraintTop_toBottomOf="@+id/frag_dust_location" />
+
+    <TextView
+        android:id="@+id/frag_dust"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:text="한국환경공단"
+        android:textStyle="italic"
+        android:textColor="@color/skyblue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/space2" />
+
+    <Space
+        android:id="@+id/space2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/frag_dust_pm10img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="@+id/frag_dust_pm10value"
+        app:layout_constraintStart_toStartOf="@+id/frag_dust_pm10value"
+        app:layout_constraintTop_toBottomOf="@+id/frag_dust_pm10value" />
+
+    <ImageView
+        android:id="@+id/frag_dust_pm25img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="@+id/frag_dust_pm25value"
+        app:layout_constraintStart_toStartOf="@+id/frag_dust_pm25value"
+        app:layout_constraintTop_toBottomOf="@+id/frag_dust_pm25value"
+        app:srcCompat="@drawable/dust1" />
+
+    <TextView
+        android:id="@+id/frag_dust_futuredate1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frag_dust_pm25img" />
+
+    <ImageView
+        android:id="@+id/frag_dust_futureimg1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/frag_dust_futuredate1"
+        app:layout_constraintStart_toStartOf="@+id/frag_dust_futuredate1"
+        app:layout_constraintTop_toBottomOf="@+id/frag_dust_futuredate1"
+        app:srcCompat="@drawable/dust1" />
+
+    <TextView
+        android:id="@+id/frag_dust_future1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/frag_dust_futuredate1"
+        app:layout_constraintStart_toStartOf="@+id/frag_dust_futuredate1"
+        app:layout_constraintTop_toBottomOf="@+id/frag_dust_futureimg1" />
+
+    <TextView
+        android:id="@+id/frag_dust_futuredate5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:text="TextView"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frag_dust_pm25img" />
+
+    <ImageView
+        android:id="@+id/frag_dust_futureimg5"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/frag_dust_futuredate5"
+        app:layout_constraintStart_toStartOf="@+id/frag_dust_futuredate5"
+        app:layout_constraintTop_toBottomOf="@+id/frag_dust_futuredate5"
+        app:srcCompat="@drawable/dust1" />
+
+    <TextView
+        android:id="@+id/frag_dust_future5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/frag_dust_futuredate5"
+        app:layout_constraintStart_toStartOf="@+id/frag_dust_futuredate5"
+        app:layout_constraintTop_toBottomOf="@+id/frag_dust_futureimg5" />
+
+    <TextView
+        android:id="@+id/frag_dust_futuredate3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/frag_dust_pm25img"
+        app:layout_constraintStart_toStartOf="@+id/frag_dust_pm25img"
+        app:layout_constraintTop_toBottomOf="@+id/frag_dust_pm25img" />
+
+    <ImageView
+        android:id="@+id/frag_dust_futureimg3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/frag_dust_futuredate3"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="@+id/frag_dust_futuredate3"
+        app:layout_constraintTop_toBottomOf="@+id/frag_dust_futuredate3"
+        app:srcCompat="@drawable/dust1" />
+
+    <TextView
+        android:id="@+id/frag_dust_future3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/frag_dust_futuredate3"
+        app:layout_constraintStart_toStartOf="@+id/frag_dust_futuredate3"
+        app:layout_constraintTop_toBottomOf="@+id/frag_dust_futureimg3" />
+
+    <TextView
+        android:id="@+id/frag_dust_futuredate2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/frag_dust_futuredate3"
+        app:layout_constraintStart_toEndOf="@+id/frag_dust_futuredate1"
+        app:layout_constraintTop_toTopOf="@+id/frag_dust_futuredate3" />
+
+    <ImageView
+        android:id="@+id/frag_dust_futureimg2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/frag_dust_futuredate2"
+        app:layout_constraintStart_toStartOf="@+id/frag_dust_futuredate2"
+        app:layout_constraintTop_toBottomOf="@+id/frag_dust_futuredate2"
+        app:srcCompat="@drawable/dust1" />
+
+    <TextView
+        android:id="@+id/frag_dust_future2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/frag_dust_futuredate2"
+        app:layout_constraintStart_toStartOf="@+id/frag_dust_futuredate2"
+        app:layout_constraintTop_toBottomOf="@+id/frag_dust_futureimg2" />
+
+    <TextView
+        android:id="@+id/frag_dust_futuredate4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/frag_dust_futuredate5"
+        app:layout_constraintStart_toEndOf="@+id/frag_dust_futuredate3"
+        app:layout_constraintTop_toTopOf="@+id/frag_dust_futuredate5" />
+
+    <ImageView
+        android:id="@+id/frag_dust_futureimg4"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/frag_dust_futuredate4"
+        app:layout_constraintStart_toStartOf="@+id/frag_dust_futuredate4"
+        app:layout_constraintTop_toBottomOf="@+id/frag_dust_futuredate4"
+        app:srcCompat="@drawable/dust1" />
+
+    <TextView
+        android:id="@+id/frag_dust_future4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/frag_dust_futuredate4"
+        app:layout_constraintStart_toStartOf="@+id/frag_dust_futuredate4"
+        app:layout_constraintTop_toBottomOf="@+id/frag_dust_futureimg4" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

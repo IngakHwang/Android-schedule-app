@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mainAct">
+
+    <LinearLayout
+        android:id="@+id/layout_first"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <Button
+            android:id="@+id/main_todaybtn"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+
+            android:text="오늘"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="4"/>
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"/>
+
+        <Button
+            android:id="@+id/main_importantbtn"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:text="중요"
+            android:layout_marginRight="30dp"
+            android:layout_weight="4"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/main_emetytextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/main_textView"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/layout_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="해야 할 일"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="30dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/main_recView"
+        android:layout_below="@id/main_textView"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        tools:listitem="@layout/additemcard"/>
+
+    <Button
+        android:id="@+id/main_addlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="일정추가"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/main_timerbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="스톱워치/타이머"
+        android:layout_toLeftOf="@id/main_addlist"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <Button
+        android:id="@+id/main_weather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="오늘날씨"
+        android:layout_toLeftOf="@id/main_timerbtn"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/today"
+        android:scaleType="centerCrop"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="35dp"
+        android:backgroundTint="@color/purple_500"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/important"
+        android:scaleType="centerCrop"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="140dp"
+        android:layout_marginTop="35dp"
+        android:backgroundTint="@color/purple_500"/>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,2 @@
+client_id, android_key_hash, code, redirect_uri
+test_client_id, test_key_hash, test_auth_code, test_redirect_uri

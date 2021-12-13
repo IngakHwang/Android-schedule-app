@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/frag_covid_decide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:text="확진환자"
+        android:textColor="@color/red"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/space"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/frag_covid_decideCnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+        app:layout_constraintEnd_toEndOf="@+id/frag_covid_decide"
+        app:layout_constraintStart_toStartOf="@+id/frag_covid_decide"
+        app:layout_constraintTop_toBottomOf="@+id/frag_covid_decide" />
+
+    <TextView
+        android:id="@+id/frag_covid_decideupdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="TextView"
+        android:textColor="@color/red"
+        app:layout_constraintEnd_toEndOf="@+id/frag_covid_decideCnt"
+        app:layout_constraintStart_toStartOf="@+id/frag_covid_decideCnt"
+        app:layout_constraintTop_toBottomOf="@+id/frag_covid_decideCnt" />
+
+    <TextView
+        android:id="@+id/frag_covid_exam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:text="검사중"
+        android:textColor="@color/orange"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/space"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/frag_covid_examCnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/orange"
+        app:layout_constraintEnd_toEndOf="@+id/frag_covid_exam"
+        app:layout_constraintStart_toStartOf="@+id/frag_covid_exam"
+        app:layout_constraintTop_toBottomOf="@+id/frag_covid_exam" />
+
+    <TextView
+        android:id="@+id/frag_covid_examupdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="TextView"
+        android:textColor="@color/orange"
+        app:layout_constraintEnd_toEndOf="@+id/frag_covid_examCnt"
+        app:layout_constraintStart_toStartOf="@+id/frag_covid_examCnt"
+        app:layout_constraintTop_toBottomOf="@+id/frag_covid_examCnt" />
+
+    <TextView
+        android:id="@+id/frag_covid_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="격리해제"
+        android:textColor="@color/skyblue"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/frag_covid_decide"
+        app:layout_constraintStart_toStartOf="@+id/frag_covid_decide"
+        app:layout_constraintTop_toBottomOf="@+id/frag_covid_decideupdown" />
+
+    <TextView
+        android:id="@+id/frag_covid_clearCnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/skyblue"
+        app:layout_constraintEnd_toEndOf="@+id/frag_covid_clear"
+        app:layout_constraintStart_toStartOf="@+id/frag_covid_clear"
+        app:layout_constraintTop_toBottomOf="@+id/frag_covid_clear" />
+
+    <TextView
+        android:id="@+id/frag_covid_clearupdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="TextView"
+        android:textColor="@color/skyblue"
+        app:layout_constraintEnd_toEndOf="@+id/frag_covid_clearCnt"
+        app:layout_constraintStart_toStartOf="@+id/frag_covid_clearCnt"
+        app:layout_constraintTop_toBottomOf="@+id/frag_covid_clearCnt" />
+
+    <TextView
+        android:id="@+id/frag_covid_death"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="사망자"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/frag_covid_exam"
+        app:layout_constraintStart_toStartOf="@+id/frag_covid_exam"
+        app:layout_constraintTop_toBottomOf="@+id/frag_covid_examupdown" />
+
+    <TextView
+        android:id="@+id/frag_covid_deathCnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/frag_covid_death"
+        app:layout_constraintStart_toStartOf="@+id/frag_covid_death"
+        app:layout_constraintTop_toBottomOf="@+id/frag_covid_death" />
+
+    <TextView
+        android:id="@+id/frag_covid_deathupdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="TextView"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/frag_covid_deathCnt"
+        app:layout_constraintStart_toStartOf="@+id/frag_covid_deathCnt"
+        app:layout_constraintTop_toBottomOf="@+id/frag_covid_deathCnt" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="코로나 현황"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/frag_covid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:text="보건복지부"
+        android:textStyle="italic"
+        android:textColor="@color/skyblue"
+        app:layout_constraintEnd_toStartOf="@+id/frag_covid_deathCnt"
+        app:layout_constraintStart_toEndOf="@+id/frag_covid_clearCnt"
+        app:layout_constraintTop_toBottomOf="@+id/space" />
+
+    <TextView
+        android:id="@+id/frag_covid_date"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/frag_covid"
+        app:layout_constraintEnd_toStartOf="@+id/frag_covid_deathCnt"
+        app:layout_constraintStart_toEndOf="@+id/frag_covid_clearCnt" />
+
+    <TextView
+        android:id="@+id/frag_covid_todaydecide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/frag_covid_exam"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+</androidx.constraintlayout.widget.ConstraintLayout>

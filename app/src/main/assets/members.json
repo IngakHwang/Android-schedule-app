@@ -1,0 +1,24 @@
+{
+  "members": [
+    {
+      "ID": "TestID",
+      "PW": "TestPW",
+      "Email": "TestEmail"
+    },
+    {
+      "ID": "Test2",
+      "PW": "Test2",
+      "Email": "Test2"
+    },
+    {
+      "ID": "Test3",
+      "PW": "Test3",
+      "Email": "Test3"
+    },
+    {
+      "ID" : "ghkdrnjsm",
+      "PW" : "dkswnZhffk!2",
+      "Email" : "ghkdrnjsm@naver.com"
+    }
+  ]
+}
