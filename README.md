@@ -34,9 +34,14 @@
 #### 핸들러를 이용한 움직이는 화면 구현
 
 - 로딩창
+
 - 핸들러를 이용한 광고 적용
+
 - 스톱워치
+
 - 타이머
+
+  <iframe width="640" height="360" src="https://www.youtube.com/watch?v=8AtY_-D1TrQ" frameborder="0" gesture="media" allowfullscreen=""></iframe>
 
 
 
