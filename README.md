@@ -15,6 +15,10 @@
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/x8qC_pjoTUg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+[![Video Label](http://img.youtube.com/vi/uLR1RNqJ1Mw/0.jpg)](https://www.youtube.com/embed/x8qC_pjoTUg)
+
+
+
 #### 일정관리
 
 - 제목, 장소 ,메모 (콘텐츠) 입력
