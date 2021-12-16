@@ -15,7 +15,9 @@
 - 로그인 및 자동로그인
 - 카카오 로그인 (카카오 로그인 API)
 
-[![Video Label](https://i9.ytimg.com/vi_webp/x8qC_pjoTUg/mqdefault.webp?sqp=CIis4Y0G&rs=AOn4CLBjU6PhiMl3QeRfpv5G_biblyvQJA)](https://www.youtube.com/embed/x8qC_pjoTUg)
+[![Video Label](md-images/mqdefault-16396434886291.webp)](https://www.youtube.com/embed/x8qC_pjoTUg)
+
+​				*- 클릭 시 동영상 재생됩니다.*
 
 
 
@@ -31,6 +33,8 @@
 
 [![Video Label](md-images/mqdefault-16394707096042.webp)](https://www.youtube.com/watch?v=8AtY_-D1TrQ)
 
+​				*- 클릭 시 동영상 재생됩니다.*
+
 
 
 #### 오늘날씨, 미세먼지, 코로나 현황
@@ -38,6 +42,8 @@
 - 공공데이터 API를 활용하여 사용자 위치와 시간을 파악하여 데이터 제공 (날씨, 미세먼지, 코로나 현황)
 
 [![Video Label](md-images/mqdefault-16394708298294.webp)](https://www.youtube.com/watch?v=mDdzTIe3ZQA)
+
+​				*- 클릭 시 동영상 재생됩니다.*
 
 
 
@@ -50,7 +56,7 @@
 
 [![Video Label](md-images/mqdefault-16394709075926.webp)](https://www.youtube.com/embed/ztnN9z0shoA)
 
-
+​				*- 클릭 시 동영상 재생됩니다.*
 
 
 
