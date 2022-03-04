@@ -1,7 +1,5 @@
 package com.example.myapplication;
 
-import android.net.Uri;
-
 public class mainListdata {
 
     private String additemcard_title,additemcard_memo,additemcard_location,additemcard_date,additemcard_time,additemcard_important;

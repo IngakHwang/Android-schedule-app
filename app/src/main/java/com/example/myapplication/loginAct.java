@@ -46,7 +46,6 @@ public class loginAct extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-
         SharedPreferences loginshared = getSharedPreferences("member",MODE_PRIVATE);
         SharedPreferences autologinshard = getSharedPreferences("AutoLogin",MODE_PRIVATE);
         AutoID = autologinshard.getString("ID",null);
