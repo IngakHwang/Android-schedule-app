@@ -12,6 +12,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.myapplication.java.mainListdata;
+
 import java.util.ArrayList;
 
 public class subAdapter extends RecyclerView.Adapter<subAdapter.ViewHolder>{

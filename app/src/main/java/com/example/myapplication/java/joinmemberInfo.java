@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.java;
 
 public class joinmemberInfo {
     String ID,PW,Email;

@@ -1,6 +1,5 @@
 package com.example.myapplication;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -10,14 +9,11 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageButton;
 import android.widget.Toast;
 
+import com.example.myapplication.java.joinmemberInfo;
 import com.google.gson.Gson;
-import com.kakao.sdk.auth.model.OAuthToken;
-import com.kakao.sdk.auth.model.Prompt;
 import com.kakao.sdk.user.UserApiClient;
-import com.kakao.sdk.user.model.Account;
 import com.kakao.sdk.user.model.User;
 
 import org.json.JSONException;
@@ -51,7 +47,6 @@ public class loginAct extends AppCompatActivity {
         AutoID = autologinshard.getString("ID",null);
         AutoPW = autologinshard.getString("PW",null);
         if(AutoID != null && AutoPW != null){
-
             Intent intent = new Intent(loginAct.this,mainAct.class);
             intent.putExtra("inputID",AutoID);
             startActivity(intent);
