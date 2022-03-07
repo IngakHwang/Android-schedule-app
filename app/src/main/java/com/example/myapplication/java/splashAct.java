@@ -1,20 +1,24 @@
-package com.example.myapplication;
-
-import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.app.AppCompatActivity;
+package com.example.myapplication.java;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.WindowManager;
 
-public class saveAct extends AppCompatActivity {
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.myapplication.R;
+import com.example.myapplication.java.loginAct;
+
+public class splashAct extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN); // 화면 전체 만들기
-        setContentView(R.layout.activity_save);
+        setContentView(R.layout.activity_splash);
 
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide(); // 액션바 지우기
@@ -25,11 +29,11 @@ public class saveAct extends AppCompatActivity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(getApplicationContext(),loginAct.class);
+                Intent intent = new Intent(getApplicationContext(), loginAct.class);
                 startActivity(intent);
                 finish();
             }
-        },500);
+        },3000);
     }
 
     @Override

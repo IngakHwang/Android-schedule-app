@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.java;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -32,8 +32,8 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.myapplication.java.mainAdapter;
-import com.example.myapplication.java.mainListdata;
+import com.example.myapplication.GpsTracker;
+import com.example.myapplication.R;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.kakao.sdk.user.UserApiClient;
@@ -212,7 +212,7 @@ public class mainAct extends AppCompatActivity /*implements mainAdapter.OnItemCl
         main_todaybtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(mainAct.this,todayAct.class);
+                Intent intent = new Intent(mainAct.this, todayAct.class);
                 startActivity(intent);
             }
         });
@@ -228,7 +228,7 @@ public class mainAct extends AppCompatActivity /*implements mainAdapter.OnItemCl
         main_addlist.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(mainAct.this,addreminderAct.class);
+                Intent intent = new Intent(mainAct.this, addreminderAct.class);
                 startActivityForResult(intent,GET_INTENT);
             }
         });
@@ -236,7 +236,7 @@ public class mainAct extends AppCompatActivity /*implements mainAdapter.OnItemCl
         main_timerbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(mainAct.this,timerAct.class);
+                Intent intent = new Intent(mainAct.this, timerAct.class);
                 startActivity(intent);
             }
         });
@@ -244,7 +244,7 @@ public class mainAct extends AppCompatActivity /*implements mainAdapter.OnItemCl
         main_weather.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(mainAct.this,weatherAct.class);
+                Intent intent = new Intent(mainAct.this, weatherAct.class);
                 startActivity(intent);
             }
         });
@@ -412,7 +412,7 @@ public class mainAct extends AppCompatActivity /*implements mainAdapter.OnItemCl
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch(item.getItemId()){
             case R.id.menu_item1:
-                Intent intent2 = new Intent(mainAct.this,profileAct.class);
+                Intent intent2 = new Intent(mainAct.this, profileAct.class);
                 startActivity(intent2);
                 return true;
             case R.id.menu_item2:
@@ -430,7 +430,7 @@ public class mainAct extends AppCompatActivity /*implements mainAdapter.OnItemCl
                 editorAL.clear();
                 editorAL.commit();
                 Toast.makeText(getApplicationContext(),"로그아웃",Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(mainAct.this,loginAct.class);
+                Intent intent = new Intent(mainAct.this, loginAct.class);
                 startActivity(intent);
                 finish();
                 return true;

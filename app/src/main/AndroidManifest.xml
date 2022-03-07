@@ -19,6 +19,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
+        <receiver
+            android:name=".AlarmRecevierKT"
+            android:enabled="true"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+
+        </receiver>
+
+        <activity
+            android:name=".SaveActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ImportantActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TodayActivity"
+            android:exported="false" />
         <activity
             android:name=".AddReminderActivity"
             android:exported="false" />
@@ -41,16 +61,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".saveAct" />
+        <activity android:name=".java.saveAct" />
 
         <service
             android:name=".GpsTracker"
             android:enabled="true"
             android:exported="true" />
 
-        <activity android:name=".weatherAct" />
-        <activity android:name=".timerAct" />
-        <activity android:name=".splashAct">
+        <activity android:name=".java.weatherAct" />
+        <activity android:name=".java.timerAct" />
+        <activity android:name=".java.splashAct">
 
             <!-- <intent-filter> -->
             <!-- <action android:name="android.intent.action.MAIN" /> -->
@@ -59,15 +79,15 @@
             <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
             <!-- </intent-filter> -->
         </activity>
-        <activity android:name=".profileAct" />
-        <activity android:name=".joinAct" />
-        <activity android:name=".listAct" />
-        <activity android:name=".addreminderAct" />
-        <activity android:name=".importantAct" />
-        <activity android:name=".todayAct" />
-        <activity android:name=".mainAct" />
+        <activity android:name=".java.profileAct" />
+        <activity android:name=".java.joinAct" />
+        <activity android:name=".java.listAct" />
+        <activity android:name=".java.addreminderAct" />
+        <activity android:name=".java.importantAct" />
+        <activity android:name=".java.todayAct" />
+        <activity android:name=".java.mainAct" />
         <activity
-            android:name=".loginAct"
+            android:name=".java.loginAct"
             android:configChanges="orientation|screenSize" />
         <activity android:name="com.kakao.sdk.auth.AuthCodeHandlerActivity">
             <intent-filter>
@@ -84,7 +104,7 @@
         </activity>
 
         <receiver
-            android:name=".AlarmRecevier"
+            android:name=".java.AlarmRecevier"
             android:enabled="true"
             android:exported="false">
             <intent-filter>

@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.java;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
@@ -6,6 +6,10 @@ import androidx.fragment.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import com.example.myapplication.R;
+import com.example.myapplication.java.stopwatchFrag;
+import com.example.myapplication.java.timerFrag;
 
 public class timerAct extends AppCompatActivity {
 

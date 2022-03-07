@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.java;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -24,7 +24,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.myapplication.java.mainListdata;
+import com.example.myapplication.R;
 import com.google.gson.Gson;
 
 import org.json.JSONArray;
@@ -52,7 +52,7 @@ public class todayAct extends AppCompatActivity {
 
     private RecyclerView recyclerView;
     private LinearLayoutManager linearLayoutManager;
-    private subAdapter subAdapter;
+    private com.example.myapplication.java.subAdapter subAdapter;
 
     private AlarmManager alarmManager;
     private NotificationManager notificationManager;
@@ -67,7 +67,6 @@ public class todayAct extends AppCompatActivity {
         setContentView(R.layout.activity_today);
 
         AlarmManager am = (AlarmManager) getSystemService(ALARM_SERVICE);
-
 
         setTitle("오늘 할 일");
 
@@ -235,7 +234,7 @@ public class todayAct extends AppCompatActivity {
                     editor.putString(mainAct.ID,json);
                     editor.apply();
 
-                    Intent intent = new Intent(todayAct.this,saveAct.class);
+                    Intent intent = new Intent(todayAct.this, saveAct.class);
                     startActivity(intent);
                 }
                 else if(todaylist.size()>=1){

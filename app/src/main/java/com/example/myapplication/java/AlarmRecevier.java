@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.java;
 
 import android.app.AlarmManager;
 import android.app.Notification;
@@ -11,6 +11,9 @@ import android.content.Intent;
 import android.os.Build;
 
 import androidx.core.app.NotificationCompat;
+
+import com.example.myapplication.R;
+import com.example.myapplication.java.todayAct;
 
 public class AlarmRecevier extends BroadcastReceiver {
     public AlarmRecevier(){}

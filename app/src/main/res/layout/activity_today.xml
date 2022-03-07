@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".todayAct">
+    tools:context=".java.todayAct">
 
     <TextView
         android:id="@+id/today_name"

@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.java;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,7 +19,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.myapplication.java.mainListdata;
+import com.example.myapplication.R;
 import com.google.gson.Gson;
 
 import org.json.JSONArray;
@@ -37,7 +37,7 @@ public class importantAct extends AppCompatActivity {
 
     private RecyclerView recyclerView;
     private LinearLayoutManager linearLayoutManager;
-    private subAdapter subAdapter;
+    private com.example.myapplication.java.subAdapter subAdapter;
     mainListdata edlist, restlist;
     TextView important_noitem;
     ImageView important_img;
@@ -186,7 +186,7 @@ public class importantAct extends AppCompatActivity {
                     editor.putString(mainAct.ID,json);
                     editor.apply();
 
-                    Intent intent = new Intent(importantAct.this,saveAct.class);
+                    Intent intent = new Intent(importantAct.this, saveAct.class);
                     startActivity(intent);
                 }
                 else if(importantlist.size()>=1){

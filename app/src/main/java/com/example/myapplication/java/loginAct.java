@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.java;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,7 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.myapplication.java.joinmemberInfo;
+import com.example.myapplication.R;
 import com.google.gson.Gson;
 import com.kakao.sdk.user.UserApiClient;
 import com.kakao.sdk.user.model.User;
@@ -47,7 +47,7 @@ public class loginAct extends AppCompatActivity {
         AutoID = autologinshard.getString("ID",null);
         AutoPW = autologinshard.getString("PW",null);
         if(AutoID != null && AutoPW != null){
-            Intent intent = new Intent(loginAct.this,mainAct.class);
+            Intent intent = new Intent(loginAct.this, mainAct.class);
             intent.putExtra("inputID",AutoID);
             startActivity(intent);
             finish();
@@ -187,7 +187,7 @@ public class loginAct extends AppCompatActivity {
         login_joinbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(loginAct.this,joinAct.class);
+                Intent intent = new Intent(loginAct.this, joinAct.class);
                 startActivity(intent);
             }
         });

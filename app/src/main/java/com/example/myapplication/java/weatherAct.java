@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.java;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentPagerAdapter;
@@ -9,6 +9,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.TableLayout;
 
+import com.example.myapplication.R;
+import com.example.myapplication.ViewPagerAdapter;
 import com.google.android.material.tabs.TabLayout;
 
 import org.w3c.dom.Document;

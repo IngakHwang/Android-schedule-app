@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".timerAct">
+    tools:context=".java.timerAct">
 
     <LinearLayout
         android:layout_width="match_parent"

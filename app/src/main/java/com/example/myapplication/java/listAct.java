@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.java;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,7 +11,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.myapplication.java.listdata;
+import com.example.myapplication.R;
 
 import java.util.ArrayList;
 
@@ -37,7 +37,7 @@ public class listAct extends AppCompatActivity {
         list_addreminder.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(listAct.this,addreminderAct.class);
+                Intent intent = new Intent(listAct.this, addreminderAct.class);
 
                 startActivityForResult(intent,GET_INTENT);
             }

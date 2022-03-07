@@ -29,7 +29,11 @@ class MainActivity : AppCompatActivity() {
         Manifest.permission.ACCESS_COARSE_LOCATION
     )
     val LOG = "Kotlin - Main"
-    lateinit var ID: String
+
+    companion object{
+        var ID = ""
+    }
+
     var dataList = mutableListOf<MainData>()
     var adapter = MainAdapter(this)
 
@@ -40,8 +44,6 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         title = "메인화면"
-
-        Log.d(LOG, "Test ${dataList.toString()}")
 
         if (checkLocationServiceStatus()) checkRunTimePermission() else showDialogForLocationServiceSetting()
 
@@ -97,11 +99,11 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.mainTodaybtn.setOnClickListener {
-            Toast.makeText(this, "TodayAcitivity 준비 중", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(this,TodayActivity::class.java))
         }
 
         binding.mainImportantbtn.setOnClickListener {
-            Toast.makeText(this, "ImportantActivity 준비 중", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(this,ImportantActivity::class.java))
         }
 
         binding.mainTimerbtn.setOnClickListener {

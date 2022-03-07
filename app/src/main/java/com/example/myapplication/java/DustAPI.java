@@ -1,7 +1,9 @@
-package com.example.myapplication;
+package com.example.myapplication.java;
 
 import android.os.AsyncTask;
 import android.util.Log;
+
+import com.example.myapplication.java.mainAct;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
