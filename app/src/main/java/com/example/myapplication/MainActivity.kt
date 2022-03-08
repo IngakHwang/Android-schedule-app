@@ -107,7 +107,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.mainTimerbtn.setOnClickListener {
-            Toast.makeText(this, "TimerAcitivity 준비 중", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(this,TimerActivity::class.java))
         }
     }
 
@@ -138,7 +138,7 @@ class MainActivity : AppCompatActivity() {
         Log.d(LOG, "저장 성공")
     }
 
-    fun loadData() {
+    private fun loadData() {
         val loadJson = getSharedPreferences("$ID reminder", MODE_PRIVATE).getString(ID, null)
 
         when {
@@ -153,7 +153,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    fun saveData() {
+    private fun saveData() {
         val gson = Gson().toJson(dataList)
         getSharedPreferences(ID + " reminder", MODE_PRIVATE).edit().run {
             putString(ID, gson)

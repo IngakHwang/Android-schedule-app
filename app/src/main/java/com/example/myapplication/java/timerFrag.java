@@ -5,14 +5,12 @@ import android.content.DialogInterface;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.CountDownTimer;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.FrameLayout;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -21,8 +19,6 @@ import androidx.fragment.app.Fragment;
 
 import com.example.myapplication.R;
 
-import java.util.Timer;
-import java.util.TimerTask;
 
 public class timerFrag extends Fragment {
 
