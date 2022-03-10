@@ -170,7 +170,7 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.menu_item1 -> {
-                Toast.makeText(this, "준비중", Toast.LENGTH_SHORT).show()
+                startActivity(Intent(this,ProfileActivity::class.java))
                 return true
             }
 

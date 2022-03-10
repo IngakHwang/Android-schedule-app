@@ -16,12 +16,18 @@ class TimerActivity : AppCompatActivity() {
 
         binding.timerStopwatch.setOnClickListener {
             val stopWatchFrag = StopWatchFragment()
-            supportFragmentManager.beginTransaction().replace(R.id.timer_frame,stopWatchFrag).commit()
+            supportFragmentManager
+                .beginTransaction()
+                .replace(R.id.timer_frame,stopWatchFrag)
+                .commit()
         }
 
         binding.timerTimer.setOnClickListener {
             val timerFrag = TimerFragment()
-            supportFragmentManager.beginTransaction().replace(R.id.timer_frame,timerFrag).commit()
+            supportFragmentManager
+                .beginTransaction()
+                .replace(R.id.timer_frame,timerFrag)
+                .commit()
         }
     }
 }

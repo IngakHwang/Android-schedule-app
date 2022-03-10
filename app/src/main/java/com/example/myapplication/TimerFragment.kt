@@ -13,8 +13,10 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.FrameLayout
 import android.widget.TextView
+import com.example.myapplication.databinding.TimerBinding
 
 class TimerFragment : Fragment() {
+    //lateinit var binding: TimerBinding
 
     var firstState = true
     var timerRunning = false
@@ -130,7 +132,7 @@ class TimerFragment : Fragment() {
 
         timerView.text=timeLeftText
 
-        if(timeLeftText.equals("00:00") && timerRunning){
+        if(timeLeftText == "00:00" && timerRunning){
             timerSettingLayout.visibility = View.VISIBLE
             timerStartLayout.visibility = View.GONE
             firstState = true
