@@ -44,7 +44,11 @@ class LoginActivity : AppCompatActivity() {
 
 
         binding.loginKakaobtn.setOnClickListener(View.OnClickListener {
-            Toast.makeText(this,"카카오 로그인",Toast.LENGTH_SHORT).show()
+            val joinFragment = JoinFragment()
+            supportFragmentManager
+                .beginTransaction()
+                .replace(R.id.login_frameLayout,joinFragment)
+                .commit()
         })
 
 
@@ -109,12 +113,5 @@ class LoginActivity : AppCompatActivity() {
             val intent = Intent(this,JoinActivity::class.java)
             startActivity(intent)
         }
-
-        if(savedInstanceState != null){
-            id = savedInstanceState.getString("ID")!!
-            pw = savedInstanceState.getString("PW")!!
-
-        }
-
     }
 }

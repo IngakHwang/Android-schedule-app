@@ -202,7 +202,7 @@ class TodayActivity : AppCompatActivity() {
                 mainHander.sendMessage(message)
 
                 try{
-                    Thread.sleep(4000)
+                    sleep(4000)
                 }catch (e: Exception){}
             }
         }

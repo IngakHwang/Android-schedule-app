@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:clickable="true"
     tools:context=".java.loginAct">
 
     <ImageView
@@ -62,7 +63,7 @@
         android:src="@drawable/kakao_login_large_wide"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_loginbtn"/>
+        app:layout_constraintTop_toBottomOf="@+id/login_loginbtn" />
 
 
     <!--com.kakao.usermgmt.LoginButton
@@ -85,5 +86,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login_kakaobtn" />
+
+    <FrameLayout
+        android:id="@+id/login_frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -307,7 +307,6 @@ public class mainAct extends AppCompatActivity /*implements mainAdapter.OnItemCl
             mainAdapter.notifyDataSetChanged();
 
             Log.i(LOG,"리사이클러뷰 아이템 추가");
-
         }
         switch(requestCode){
             case GPS_ENABLE_REQUEST_CODE:

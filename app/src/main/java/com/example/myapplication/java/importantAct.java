@@ -48,8 +48,6 @@ public class importantAct extends AppCompatActivity {
         setContentView(R.layout.activity_important);
         setTitle("중요");
 
-
-
         SharedPreferences mainShared = getSharedPreferences(mainAct.ID+" reminder", MODE_PRIVATE);
         String load = mainShared.getString(mainAct.ID,null);
 
